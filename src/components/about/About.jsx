@@ -5,31 +5,40 @@ import { RiStackLine } from 'react-icons/ri'
 
 import aboutImage from '../../assets/AboutPic.jpg'
 
+import Article from '../../styles/Article.style'
+import Card from '../../styles/Card.style'
+import Container from '../../styles/Container.style'
+import Image from '../../styles/Image.style'
+import Wrapper from '../../styles/Wrapper.style'
 import './about.css'
 
 const About = () => {
   return (
-    <section id="about">
+    <Wrapper id="about">
       <h5>A Little Bit</h5>
       <h2>About Me</h2>
 
-      <div className='container about-container'>
+      <Container className='about-container'>
         <div className='about-image'>
-          <img src={aboutImage} alt='Alie Brubaker'/>
+          <Image src={aboutImage} alt='Alie Brubaker'/>
         </div>
 
         <div className='about-content'>
           <div className="about-cards">
-            <article className='about-card'>
-              <GoMortarBoard className='about-icon'/>
-              <h5>Flatiron School Graduate</h5>
-              <small>Software Engineering Program</small>
-            </article>
-            <article className='about-card'>
-              <RiStackLine className='about-icon'/>
-              <h5>Fullstack</h5>
-              <small>React | Ruby on Rails</small>
-            </article>
+            <Card padding={false}>
+              <Article >
+                <GoMortarBoard className='icon'/>
+                <h4>Flatiron School Graduate</h4>
+                <small>Software Engineering Program</small>
+              </Article>
+            </Card>
+            <Card padding={false}>
+              <Article >
+                <RiStackLine className='icon'/>
+                <h4>Fullstack</h4>
+                <small>React | Ruby on Rails</small>
+              </Article>
+            </Card>
             {/* <article className='about-card'>
               <GoMortarBoard className='about-icon'/>
               <h5>Flatiron School Graduate</h5>
@@ -41,8 +50,8 @@ const About = () => {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptatibus laborum esse at neque iusto. Corporis ut, beatae harum qui sint assumenda voluptatum, pariatur blanditiis impedit hic, odit laboriosam ipsa.
           </p>
         </div>
-      </div>
-    </section>
+      </Container>
+    </Wrapper>
   )
 }
 

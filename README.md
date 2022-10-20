@@ -82,7 +82,7 @@ A few dependencies are needed to run the project
 
 ### Prerequisites
 
-The package.json file should contain all the packages node needs to run the project. The project uses React-Icons, Styled-Components
+The package.json file should contain all the packages node needs to run the project. The project uses React-Icons and Styled-Components.
 
 ### Installation
 

@@ -9,11 +9,10 @@ import Portfolio from './components/portfolio/Portfolio'
 import Skills from './components/skills/Skills'
 
 import GlobalStyles from './GlobalStyles.style'
-import Wrapper from './styles/Wrapper.style'
 
 const App = () => {
   return (
-    <Wrapper>
+    <>
       <GlobalStyles />      
       <Header />
       <Navigation />
@@ -22,7 +21,7 @@ const App = () => {
       <Portfolio />
       <Contact />
       <Footer />
-    </Wrapper>
+    </>
   )
 }
 

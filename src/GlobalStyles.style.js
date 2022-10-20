@@ -23,7 +23,7 @@ const GlobalStyles = createGlobalStyle`
 
     --transition: all 400ms ease;
 
-    --container-width-xl: 70%;
+    --container-width-xl: 75%;
     --container-width-lg: 75%;
     --container-width-md: 80%;
     --container-width-sm: 90%;
@@ -45,36 +45,12 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1.7;  
   }
 
-  .container {
-    width: var(--container-width-xl);
-    margin: 0 auto;
-  }
-
   h1, h2, h3, h4, h5 {
     font-weight: 500;
   }
 
   h1 {
     font-size: 2.5rem;
-  }
-
-  section {
-    width: 100%;
-    margin-top: 8rem;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-  }
-
-  section > h2, section > h5 {
-    text-align: center;
-    color: var(--color-light);
-  }
-
-  section > h2 {
-    color: var(--color-primary);
-    margin-bottom: 3rem;
   }
 
   .text-light {
@@ -88,80 +64,6 @@ const GlobalStyles = createGlobalStyle`
 
   a:hover {
     color: var(--color-white);
-  }
-
-  .btn {
-    width: max-content;
-    display: inline-block;
-    color: var(--color-primary);
-    padding: 0.75rem 1.2rem;
-    border-radius: .4rem;
-    cursor: pointer;
-    border: 1px solid var(--color-primary);
-    transition: var(--transition);
-  }
-
-  .btn:hover {
-    background: var(--color-white);
-    color: var(--color-bg);
-    border-color: transparent;
-  }
-
-  .btn-primary {
-    background: var(--color-primary);
-    color: var(--color-bg);
-  }
-
-  img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  /* large screens */
-  @media screen and (max-width: 1024px) {
-    .container {
-      width: var(--container-width-lg);
-    }
-
-    section {
-      margin-top: 5rem;
-    }
-  }
-
-  /* medium screens */
-  @media screen and (max-width: 720px) {
-    .container {
-      width: var(--container-width-md);
-    }
-
-    section {
-      margin-top: 5rem;
-    }
-  }
-
-  /* small screens */
-
-  @media screen and (max-width: 540px) {
-    .container {
-      width: var(--container-width-sm);
-    }
-
-    section > h2 {
-      margin-bottom: 2rem;
-    }
-  }
-
-  /* extra-small screens */
-
-  @media screen and (max-width: 360px) {
-    .container {
-      width: var(--container-width-xs);
-    }
-
-    section > h2 {
-      margin-bottom: 2rem;
-    }
   }
 `
 

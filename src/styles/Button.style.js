@@ -4,7 +4,8 @@ const Button = styled.button`
   
   width: max-content;
   display: inline-block;
-  color: var(--color-primary);
+  color: ${props => props.primary ? 'var(--color-bg)' : 'var(--color-primary)'};
+  background: ${props => props.primary ? 'var(--color-primary)' : '' };
   padding: 0.75rem 1.2rem;
   border-radius: .4rem;
   cursor: pointer;

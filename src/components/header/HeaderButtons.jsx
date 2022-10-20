@@ -1,12 +1,13 @@
 import React from 'react'
 
+import Button from '../../styles/Button.style'
 import CV from '../../assets/AlieCV.pdf'
 
 const Buttons = () => {
   return (
     <div className='header-button'>
-      <a href={CV} download className='btn'>Download CV</a>
-      <a href='#contact' className='btn btn-primary'>Contact Me</a>
+      <Button as='a' href={CV} download >Download CV</Button>
+      <Button as='a' href='#contact' primary={true}>Contact Me</Button>
     </div>
   )
 }
