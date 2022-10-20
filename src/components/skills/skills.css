@@ -56,7 +56,9 @@
 /* small screens */
 
 @media screen and (max-width: 600px) {
-  
+  .skills-container > div {
+    padding: 2rem 1.5rem;
+  }
 }
 
 
