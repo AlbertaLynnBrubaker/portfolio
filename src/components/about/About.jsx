@@ -25,25 +25,20 @@ const About = () => {
 
         <div className='about-content'>
           <div className="about-cards">
-            <Card padding={false}>
-              <Article >
-                <GoMortarBoard className='icon'/>
+            <Card varPadding={false} >
+              <Article varFontSize={true}>
+                <GoMortarBoard className='icon' />
                 <h4>Flatiron School Graduate</h4>
                 <small>Software Engineering Program</small>
               </Article>
             </Card>
-            <Card padding={false}>
-              <Article >
-                <RiStackLine className='icon'/>
+            <Card varPadding={false} >
+              <Article varFontSize={true}>
+                <RiStackLine className='icon' />
                 <h4>Fullstack</h4>
                 <small>React | Ruby on Rails</small>
               </Article>
-            </Card>
-            {/* <article className='about-card'>
-              <GoMortarBoard className='about-icon'/>
-              <h5>Flatiron School Graduate</h5>
-              <small>Software Engineering Program</small>
-            </article> */}            
+            </Card>          
           </div>
 
           <p>

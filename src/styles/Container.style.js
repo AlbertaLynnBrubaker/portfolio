@@ -5,7 +5,7 @@ const Container = styled.div`
   margin: 0 auto;
 
   /* large screens */
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1440px) {
     width: var(--container-width-lg);
     
     section {
@@ -14,7 +14,7 @@ const Container = styled.div`
   }
 
   /* medium screens */
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 960px) {
     width: var(--container-width-md);
 
     section {
@@ -24,7 +24,7 @@ const Container = styled.div`
 
   /* small screens */
 
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 640px) {
     width: var(--container-width-sm);
     
     section > h2 {

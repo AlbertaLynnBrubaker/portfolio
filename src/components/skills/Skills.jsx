@@ -16,7 +16,7 @@ const Skills = () => {
       <h2>My Skills</h2>
 
       <Container className="skills-container">
-        <Card width={true} padding={true}>
+        <Card varWidth={true} varPadding={true}>
           <h3>Frontend Development</h3>
           <div className="skills-content">
             <Article flex={true}>
@@ -63,25 +63,25 @@ const Skills = () => {
             </Article>
           </div>
         </Card>
-        <Card width={true} padding={true}>
+        <Card varWidth={true} varPadding={true}>
           <h3>Backend Development</h3>
           <div className="skills-content">
-            <Article>
-              <MdLibraryAddCheck className='skills-details-icon'/>
+            <Article flex={true}>
+              <MdLibraryAddCheck className='icon'/>
               <div>
                 <h4>Ruby</h4>
                 <small className='text-light'>Intermediate</small>
               </div>
             </Article>
-            <Article>
-              <MdLibraryAddCheck className='skills-details-icon'/>
+            <Article flex={true}>
+              <MdLibraryAddCheck className='icon'/>
               <div>
                 <h4>Rails</h4>
                 <small className='text-light'>Intermediate</small>
               </div>
             </Article>
-            <Article>
-              <MdLibraryAddCheck className='skills-details-icon'/>
+            <Article flex={true}>
+              <MdLibraryAddCheck className='icon'/>
               <div>
                 <h4>SQL</h4>
                 <small className='text-light'>Beginner</small>
