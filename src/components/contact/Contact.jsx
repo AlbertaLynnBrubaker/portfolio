@@ -5,11 +5,14 @@ import Button from '../../styles/Button.style'
 import Card from '../../styles/Card.style'
 import Container from '../../styles/Container.style'
 import Form from '../../styles/Form.style'
+import Image from '../../styles/Image.style'
 import Input from '../../styles/Input.style'
 import Wrapper from '../../styles/Wrapper.style'
 import './contact.css'
 
 import { HiOutlineMailOpen } from 'react-icons/hi'
+import { RiMessengerLine } from 'react-icons/ri'
+import whatsApp from '../../assets/WhatsApp.png'
 
 const Contact = () => {
   return (
@@ -19,8 +22,8 @@ const Contact = () => {
       <Container className='contact-container'>
         <div className="contact-options">
           <Card>
-            <Article>
-              <HiOutlineMailOpen />
+            <Article >
+              <HiOutlineMailOpen className='icon'/>
               <h4>Email</h4>
               <h5>findingalberta@gmail.com</h5>
               <a href='mailto:findingalberta@gmail.com'>Send a message</a>
@@ -28,18 +31,18 @@ const Contact = () => {
           </Card>
           <Card>
             <Article>
-              <HiOutlineMailOpen />
-              <h4>Email</h4>
-              <h5>findingalberta@gmail.com</h5>
-              <a href='mailto:findingalberta@gmail.com'>Send a message</a>
+              <RiMessengerLine className='icon'/>
+              <h4>Messenger</h4>
+              <h5>Alie Brubaker</h5>
+              <a href='https://m.me/alie.brubaker' target='_blank'>Send a message</a>
             </Article>
           </Card>
           <Card>
-            <Article>
-              <HiOutlineMailOpen />
-              <h4>Email</h4>
-              <h5>findingalberta@gmail.com</h5>
-              <a href='mailto:findingalberta@gmail.com'>Send a message</a>
+            <Article className='whats-app'>
+              <div className='whats-app-image'>
+                <Image src={whatsApp} alt='WhatsApp QR Code' />
+              </div>
+              <h4>WhatsApp</h4>
             </Article>
           </Card>
         </div>        

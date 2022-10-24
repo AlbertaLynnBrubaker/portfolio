@@ -7,7 +7,7 @@ const Button = styled.button`
   color: ${props => props.primary ? 'var(--color-bg)' : 'var(--color-primary)'};
   background: ${props => props.primary ? 'var(--color-primary)' : '' };
   padding: 0.75rem 1.2rem;
-  border-radius: .4rem;
+  border-radius: .7rem;
   cursor: pointer;
   border: 1px solid var(--color-primary);
   transition: var(--transition);
