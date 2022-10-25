@@ -69,7 +69,9 @@ This repo is the code for my personal portfolio
 ### Built With
 
 * [![React][React.js]][React-url]
-* [![Styled-Components][<!-- Insert Styled Components URL -->]]
+* [💅🏾Styled-Components](https://styled-components.com/)
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,7 +113,6 @@ Alie Brubaker - [LinkedIn][linkedin-url2] - [GitHub](https://github.com/AlbertaL
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
@@ -123,3 +124,5 @@ Alie Brubaker - [LinkedIn][linkedin-url2] - [GitHub](https://github.com/AlbertaL
 [file-structure-screenshot]: images/screenshot.png 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
+
+[Styled-Components-url]: https://styled-components.com/

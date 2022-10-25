@@ -20,6 +20,10 @@ const Article = styled.article`
   font-size: .7rem;
   color: var(--color-light);
   }
+
+  a {
+    color: var(--color-bg);
+  }
 `
 
 export default Article
