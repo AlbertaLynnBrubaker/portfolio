@@ -35,34 +35,6 @@
   gap: 1.5rem;
 }
 
-.about-card {
-  background: linear-gradient(45deg, transparent, var(--color-primary), transparent);  
-  border-radius: 2rem;
-  padding: 2rem;
-  text-align: center;
-  transition: var(--transition);
-}
-
-.about-card:hover {
-  cursor: default;
-  transform: scale(1.05);
-}
-
-.about-icon {
-  color: var(--color-bg);
-  font-size: 2rem;
-  margin-bottom: .5rem;
-}
-
-.about-card h5 {
-  font-size: 1rem;
-}
-
-.about-card small {
-  font-size: .7rem;
-  color: var(--color-light);
-}
-
 .about-content p {
   margin: 2rem 0 2.6rem;
   color: var(--color-light);

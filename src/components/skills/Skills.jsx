@@ -2,90 +2,95 @@ import React from 'react'
 
 import { MdLibraryAddCheck } from 'react-icons/md'
 
+import Article from '../../styles/Article.style'
+import Card from '../../styles/Card.style'
+import Container from '../../styles/Container.style'
+import Wrapper from '../../styles/Wrapper.style'
+
 import './skills.css'
 
 const Skills = () => {
   return (
-    <section id='skills'>
+    <Wrapper id='skills'>
       <h5>Learn About</h5>
       <h2>My Skills</h2>
 
-      <div className="container skills-container">
-        <div className="skills-frontend">
+      <Container className="skills-container">
+        <Card varWidth={true} varPadding={true}>
           <h3>Frontend Development</h3>
           <div className="skills-content">
-            <article className='skills-details'>
-              <MdLibraryAddCheck className='skills-details-icon'/>
+            <Article flex={true}>
+              <MdLibraryAddCheck className='icon'/>
               <div>
                 <h4>HTML</h4>
                 <small className='text-light'>Intermediate</small>
               </div>
-            </article>
-            <article className='skills-details'>
-              <MdLibraryAddCheck className='skills-details-icon'/>
+            </Article>
+            <Article flex={true}>
+              <MdLibraryAddCheck className='icon'/>
               <div>
                 <h4>CSS</h4>
                 <small className='text-light'>Intermediate</small>
               </div>
-            </article>
-            <article className='skills-details'>
-              <MdLibraryAddCheck className='skills-details-icon'/>
+            </Article>
+            <Article flex={true}>
+              <MdLibraryAddCheck className='icon'/>
               <div>
                 <h4>JavaScript</h4>
                 <small className='text-light'>Beginner</small>
               </div>
-            </article>
-            <article className='skills-details'>
-              <MdLibraryAddCheck className='skills-details-icon'/>
+            </Article>
+            <Article flex={true}>
+              <MdLibraryAddCheck className='icon'/>
               <div>
                 <h4>Styled Components</h4>
                 <small className='text-light'>Beginner</small>
               </div>
-            </article>
-            <article className='skills-details'>
-              <MdLibraryAddCheck className='skills-details-icon'/>
+            </Article>
+            <Article flex={true}>
+              <MdLibraryAddCheck className='icon'/>
               <div>
                 <h4>Bootstrap</h4>
                 <small className='text-light'>Beginner</small>
               </div>
-            </article>
-            <article className='skills-details'>
-              <MdLibraryAddCheck className='skills-details-icon'/>
+            </Article>
+            <Article flex={true}>
+              <MdLibraryAddCheck className='icon'/>
               <div>
                 <h4>React</h4>
                 <small className='text-light'>Intermediate</small>
               </div>
-            </article>
+            </Article>
           </div>
-        </div>
-        <div className="skills-backend">
+        </Card>
+        <Card varWidth={true} varPadding={true}>
           <h3>Backend Development</h3>
           <div className="skills-content">
-            <article className='skills-details'>
-              <MdLibraryAddCheck className='skills-details-icon'/>
+            <Article flex={true}>
+              <MdLibraryAddCheck className='icon'/>
               <div>
                 <h4>Ruby</h4>
                 <small className='text-light'>Intermediate</small>
               </div>
-            </article>
-            <article className='skills-details'>
-              <MdLibraryAddCheck className='skills-details-icon'/>
+            </Article>
+            <Article flex={true}>
+              <MdLibraryAddCheck className='icon'/>
               <div>
                 <h4>Rails</h4>
                 <small className='text-light'>Intermediate</small>
               </div>
-            </article>
-            <article className='skills-details'>
-              <MdLibraryAddCheck className='skills-details-icon'/>
+            </Article>
+            <Article flex={true}>
+              <MdLibraryAddCheck className='icon'/>
               <div>
                 <h4>SQL</h4>
                 <small className='text-light'>Beginner</small>
               </div>
-            </article>            
+            </Article>            
           </div>
-        </div>
-      </div>
-    </section>
+        </Card>
+      </Container>
+    </Wrapper>
   )
 }
 

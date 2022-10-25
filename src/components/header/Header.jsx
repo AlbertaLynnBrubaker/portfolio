@@ -4,24 +4,27 @@ import HeaderButtons from './HeaderButtons'
 import HeaderSocials from './HeaderSocials'
 import avatar from '../../assets/HeaderPic.png'
 
+import Container from '../../styles/Container.style'
+import Image from '../../styles/Image.style'
+import Wrapper from '../../styles/Wrapper.style'
 import './header.css'
 
 const Header = () => {
   return (
-    <header>
-      <div className="container header-container">
+    <Wrapper as='header'>
+      <Container className="header-container">
         <h1>Alie Brubaker</h1>
         <h5 className='text-light'>Fullstack Software Engineer</h5>
         <HeaderButtons />
         <HeaderSocials />
         <div className='avatar'>
-          <img src={avatar} alt='Alie Brubaker' />
+          <Image src={avatar} alt='Alie Brubaker' />
         </div>
 
         <a href='#contact' className='scroll-down'>Scroll to Bottom</a>
         
-      </div>
-    </header>
+      </Container>
+    </Wrapper>
   )
 }
 

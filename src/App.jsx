@@ -6,18 +6,19 @@ import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
 import Navigation from './components/navigation/Navigation'
 import Portfolio from './components/portfolio/Portfolio'
-import Stack from './components/stack/Stack'
 import Skills from './components/skills/Skills'
+
+import GlobalStyles from './GlobalStyles.style'
 
 const App = () => {
   return (
-    <>      
+    <>
+      <GlobalStyles />      
       <Header />
       <Navigation />
       <About />
       <Skills />
       <Portfolio />
-      <Stack />
       <Contact />
       <Footer />
     </>
