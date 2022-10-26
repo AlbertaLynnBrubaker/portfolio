@@ -37,6 +37,10 @@ ul {
   margin: 0 auto 2rem;
 }
 
+li a {
+  font-size: 1.2rem;
+}
+
 .footer-socials {
   display: flex;
   justify-content: center;

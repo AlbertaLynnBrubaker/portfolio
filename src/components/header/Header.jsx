@@ -12,7 +12,7 @@ import './header.css'
 
 const Header = () => {
   return (
-    <Wrapper as='header'>
+    <Wrapper as='header' id='header'>
       <Container className="header-container">
         <div className='header-logo-container'>          
           <Image src={ABLogoLight} />          

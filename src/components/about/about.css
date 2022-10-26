@@ -46,6 +46,10 @@
   gap: 1.5rem;
 }
 
+.about-card {
+  cursor: pointer;
+}
+
 .about-content p {
   margin: 2rem 0 2.6rem;
   color: var(--color-light);
@@ -74,9 +78,7 @@
     margin-bottom: 2.5rem;
   }
 
-  .about-card {
-    width: 18rem;
-  }
+  
 
   .about-content p {
     margin: 1rem 4rem 1.5rem;

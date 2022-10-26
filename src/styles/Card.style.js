@@ -10,7 +10,6 @@ const Card = styled.div`
   
 
   &:hover {
-    cursor: default;
     transform: scale(1.03);
   }
 

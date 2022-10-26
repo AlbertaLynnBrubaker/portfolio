@@ -1,7 +1,9 @@
-header {
+#header {
   height: 60rem;
   width: 100%;
   overflow: hidden;
+  margin: 0;
+  padding-top: 8rem;
 }
 
 .header-container {

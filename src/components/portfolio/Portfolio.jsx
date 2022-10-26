@@ -22,7 +22,7 @@ const Portfolio = () => {
             <h3>Title</h3>
             <div className='portfolio-buttons'>
               <Button as='a' href='' primary>Github</Button>
-              <Button as='a' href='' primary>Live Demo</Button>
+              <Button as='a' href='' primary>Demo</Button>
             </div>
           </Article>
         </Card> 
@@ -34,7 +34,7 @@ const Portfolio = () => {
             <h3>Title</h3>
             <div className='portfolio-buttons'>
               <Button as='a' href='' primary>Github</Button>
-              <Button as='a' href='' primary>Live Demo</Button>
+              <Button as='a' href='' primary>Demo</Button>
             </div>
           </Article>
         </Card>
@@ -46,7 +46,7 @@ const Portfolio = () => {
             <h3>Title</h3>
             <div className='portfolio-buttons'>
               <Button as='a' href='' primary>Github</Button>
-              <Button as='a' href='' primary>Live Demo</Button>
+              <Button as='a' href='' primary>Demo</Button>
             </div>
           </Article>
         </Card>
