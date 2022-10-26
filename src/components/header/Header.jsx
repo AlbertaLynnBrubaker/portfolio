@@ -3,6 +3,7 @@ import React from 'react'
 import HeaderButtons from './HeaderButtons'
 import HeaderSocials from './HeaderSocials'
 import avatar from '../../assets/HeaderPic.png'
+import ABLogoLight from '../../assets/ABLogoLight.png'
 
 import Container from '../../styles/Container.style'
 import Image from '../../styles/Image.style'
@@ -13,6 +14,9 @@ const Header = () => {
   return (
     <Wrapper as='header'>
       <Container className="header-container">
+        <div className='header-logo-container'>          
+          <Image src={ABLogoLight} />          
+        </div>
         <h1>Alie Brubaker</h1>
         <h5 className='text-light'>Fullstack Software Engineer</h5>
         <HeaderButtons />

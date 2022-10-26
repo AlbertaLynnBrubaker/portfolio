@@ -1,6 +1,6 @@
 #footer {
   background-color: var(--color-primary);
-  padding: 3rem 0 1rem 0;
+  padding: 3rem 0 .5rem 0;
   text-align: center;
   font-size: .9rem;
 }
@@ -13,11 +13,20 @@
   color: var(--color-bg);
 }
 
+.footer-logo-container {
+  display: flex;
+  justify-content: center;
+}
+
 .footer-logo {
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 2rem;
-  display: inline-block;
+  
+}
+
+.footer-logo img {
+  width: 4rem;
 }
 
 ul {
@@ -37,4 +46,12 @@ ul {
 
 .footer-socials a {
   font-size: 2rem;
+}
+
+.footer-copyright {
+  margin-top: 2.5rem;
+}
+
+.footer-copyright small {
+  color: var(--color-bg)
 }

@@ -9,7 +9,12 @@
   margin-top: 4rem;
 }
 
-.about-image {
+.about-images {
+  position: relative;
+}
+
+.about-image1, .about-image2 {
+  position: absolute;
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 2rem;
@@ -20,11 +25,17 @@
   transition: var(--transition);
 }
 
-.about-image:hover {
-  transform: scale(1.05);
+.about-images:hover .about-image1 {  
+  overflow: hidden;
+  transform: rotate(6deg) translateX(10rem);
 }
 
-.about-image > img {
+.about-images:hover .about-image2 {  
+  overflow: hidden;
+  transform: rotate(-6deg) translateX(-10rem);
+}
+
+.about-image1 > img, .about-image2 > img {
   padding: 1.3rem;
   border-radius: 2.4rem;
 }
@@ -44,12 +55,17 @@
 @media screen and (max-width: 1024px) {
   .about-container {
     grid-template-columns: 1fr;
+    grid-template-rows: 5fr 7fr;
     gap: 0;
   }
 
-  .about-image {
+  .about-images {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-image1, .about-image2 {
     width: 50%;
-    margin: 2rem auto 4rem;
   }
 
   .about-cards {

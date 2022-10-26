@@ -10,6 +10,16 @@ header {
   position: relative;
 }
 
+.header-logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.header-logo-container img {
+  width: 4rem;
+}
+
 .header-button {
   margin-top: 2.5rem;
   display: flex;
