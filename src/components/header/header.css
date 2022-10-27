@@ -1,5 +1,4 @@
 #header {
-  height: 60rem;
   width: 100%;
   overflow: hidden;
   margin: 0;
@@ -30,17 +29,15 @@
 }
 
 .header-socials {
+  margin-top: 3rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: .8rem;
-  position: absolute;
-  left: 0;
-  bottom: 13rem;
+  justify-content: center;
 }
 
 .header-socials a {
-  font-size: 1.6rem;
+  font-size: 3rem;
 }
 
 .avatar {
@@ -69,20 +66,9 @@
   transform: rotate(90deg);
 }
 
-/* medium screens */
-@media screen and (max-width: 1024px) {
-  
-}
-
-/* small screens */
-
-@media screen and (max-width: 600px) {
-  /* header {
-    width: 40rem;
-  } */
-
-  .avatar {
-    width: 75%;
+/* large screens */
+@media screen and (max-width: 1440px) {
+  #header {
+    padding-top: 4rem;
   }
-  
 }

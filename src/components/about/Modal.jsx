@@ -17,6 +17,15 @@ const Modal = ({showModal, setShowModal}) => {
       return null
   }
 
+  const contentMap = opt.content.map(paragraph => {
+    return (
+      <>
+        <h4>{paragraph}</h4>
+        <br/>
+      </>
+    )
+  })
+
   return (
     <div className='modal-wrapper' onClick={() => setShowModal("")}>
       <div className='modal-container'>
@@ -24,7 +33,7 @@ const Modal = ({showModal, setShowModal}) => {
           <h2>{opt.title}</h2>
         </div>
         <div className='modal-content'>
-          <h4>{opt.content}</h4>
+          {contentMap}
         </div>
       </div>
     </div>
