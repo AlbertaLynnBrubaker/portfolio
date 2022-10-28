@@ -29,3 +29,27 @@
   border: 3px solid var(--color-bg);
   border-radius: 1rem;
 }
+
+/* small screens */
+
+@media screen and (max-width: 640px) {
+  .contact-container {
+    width: 90%;
+    display: grid;
+    place-items: start center;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+/* extra-small screens */
+
+@media screen and (max-width: 360px) {
+  .contact-container {
+    width: 100%;
+    display: grid;
+    place-items: start center;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

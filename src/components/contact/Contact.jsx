@@ -39,7 +39,7 @@ const Contact = () => {
       <Container className='contact-container'>
         <div className="contact-options">
           <Card>
-            <Article >
+            <Article varFontSize={true}>
               <HiOutlineMailOpen className='icon'/>
               <h4>Email</h4>
               <h5>findingalberta@gmail.com</h5>
@@ -47,7 +47,7 @@ const Contact = () => {
             </Article>
           </Card>
           <Card>
-            <Article>
+            <Article varFontSize={true}>
               <RiMessengerLine className='icon'/>
               <h4>Messenger</h4>
               <h5>Alie Brubaker</h5>

@@ -16,9 +16,13 @@ const Article = styled.article`
     margin: .5rem .3rem;
   }
 
+  .project-image img {
+  border-radius: 1rem;
+}
+
   small {
   font-size: .7rem;
-  color: var(--color-light);
+  color: ${props => props.varColor ? 'var(--color-bg)' : 'var(--color-light)'};
   }
 
   a {

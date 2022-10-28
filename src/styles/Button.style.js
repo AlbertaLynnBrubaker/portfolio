@@ -10,13 +10,12 @@ const Button = styled.button`
   border-radius: .7rem;
   cursor: pointer;
   border: 1px solid var(--color-primary);
-  transition: var(--transition);
-  
+  transition: var(--transition);  
 
   &:hover {
-    background: var(--color-white);
-    color: var(--color-bg);
-    border-color: transparent;
+    background: ${props => props.primary ? 'var(--color-bg)' : 'var(--color-primary)'};
+    color: ${props => props.primary ? 'var(--color-white)' : 'var(--color-bg)'};
+    border-color: ${props => props.primary ? '1px solid var(--color-primary)' : 'transparent'};
   }
 
   .btn-primary {

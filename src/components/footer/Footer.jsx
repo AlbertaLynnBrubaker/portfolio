@@ -2,17 +2,23 @@ import React from 'react'
 
 import './footer.css'
 
+import Image from '../../styles/Image.style'
 import Wrapper from '../../styles/Wrapper.style'
 
+import ABLogo from '../../assets/ABLogo.png'
 import { BsFacebook, BsTwitter, BsLinkedin } from 'react-icons/bs'
 
 const Footer = () => {
   return (
     <Wrapper as='footer' id='footer'>
-      <a href='#' className='footer-logo'>ALIE</a>
+      <div className='footer-logo-container'>
+        <a href='#header' className='footer-logo'>
+          <Image src={ABLogo} />
+        </a>
+      </div>
 
       <ul>
-        <li><a href='#'>Home</a></li>
+        <li><a href='#header'>Home</a></li>
         <li><a href='#about'>About</a></li>
         <li><a href='#skills'>Skills</a></li>
         <li><a href='#portfolio'>Portfolio</a></li>
@@ -26,7 +32,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-copyright">
-        <small className='text-light'>&copy; Alie Brubaker. All rights reserved.</small>
+        <small>&copy; Alie Brubaker. All rights reserved.</small>
       </div>
     </Wrapper>
   )

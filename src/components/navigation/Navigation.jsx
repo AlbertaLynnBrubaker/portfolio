@@ -9,11 +9,11 @@ import { HiOutlineMailOpen } from 'react-icons/hi'
 import Nav from '../../styles/Nav.style'
 
 const Navigation = () => {
-  const [ activeNav, setActiveNav ] = useState('#')
+  const [activeNav, setActiveNav] = useState('#header')
 
   return (
     <Nav>
-      <a href='#' onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><BiHome/></a>
+      <a href='#header' onClick={() => setActiveNav('#header')} className={activeNav === '#' ? 'active' : ''}><BiHome/></a>
       <a href='#about' onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><CgProfile/></a>
       <a href='#skills' onClick={() => setActiveNav('#skills')} className={activeNav === '#skills' ? 'active' : ''}><BsClipboardCheck/></a>
       <a href='#portfolio' onClick={() => setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''}><VscFolderOpened/></a>
