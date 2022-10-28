@@ -19,7 +19,7 @@ const Project = ({project}) => {
         <div className='portfolio-buttons'>
           <Button as='a' href={github} primary target='_blank'>Github</Button>
           {/* <Button as='a' href={demo} primary>Github</Button> */}
-          <Button as='a' href={youtube} primary>Watch</Button>
+          <Button as='a' href={youtube} primary target='_blank'>Watch</Button>
         </div>
       </Article>
     </Card>

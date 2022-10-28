@@ -9,7 +9,7 @@ const projects = [
     image: rainbowSample,
     description: 'A social media site with an emphasis on being a place for LGBTQ+ people to gather and share their lives',
     github: 'https://github.com/AlbertaLynnBrubaker/rainbow-capstone-project',
-    youtube: '',
+    youtube: 'https://youtu.be/aHeYZvDCQQc',
     demo: ''
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     image: flatbaseSample,
     description: 'A full stack web application for players of Dungeons & Dragons to create, store, and modify character sheets',
     github: 'https://github.com/AndreaRose92/dnd-flatbase-backend',
-    youtube: '',
+    youtube: 'https://youtu.be/fu3U2NVs2wg',
     demo: ''
   },
   {
@@ -27,7 +27,7 @@ const projects = [
     image: flatifySample,
     description: 'A close one-for-one UI clone of the Spotify web application',
     github: 'https://github.com/cyoojin513/flatify',
-    youtube: '',
+    youtube: 'https://youtu.be/Z7G7H45IEi0',
     demo: ''
   }
 ]

@@ -1,5 +1,6 @@
 {
   "name": "my_portfolio_site",
+  "homepage": "https://discover-aliebrubaker.net/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
