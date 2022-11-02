@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 
 import emailjs from 'emailjs-com';
+import { $serviceID, $templateID, $publicKey } from '../../../key';
 
 import Article from '../../styles/Article.style'
 import Button from '../../styles/Button.style'
@@ -22,7 +23,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault()
 
-    emailjs.sendForm('service_t2x4dzm', 'template_3nvvme8', form.current, 'k9n9SYkg_tZfo2N2t')
+    emailjs.sendForm($serviceID, $templateID, form.current, $publicKey)
       .then((result) => {
           console.log(result.text)
       }, (error) => {
