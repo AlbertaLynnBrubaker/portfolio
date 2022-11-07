@@ -24,7 +24,16 @@
 
 .modal-content {
   height: 70%;
+  width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
   overflow-y: scroll;
+}
+
+
+.modal-content img {
+  width: 850px;
+  height: 1100px;
 }
 
 /* large screens */

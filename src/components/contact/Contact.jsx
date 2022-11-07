@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 
 import emailjs from 'emailjs-com';
-import { $serviceID, $templateID, $publicKey } from '../../../key';
+import { $serviceID, $templateID, $publicKey } from '../../key';
 
 import Article from '../../styles/Article.style'
 import Button from '../../styles/Button.style'

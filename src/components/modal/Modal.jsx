@@ -1,7 +1,8 @@
 import React from 'react'
 
 import './modal.css'
-import { flatironData, workData } from './modal_data'
+import { flatironData, workData, CVData } from './modal_data'
+import AlieCV from '../../assets/AlieCV.png'
 
 const Modal = ({showModal, setShowModal}) => {
   let opt
@@ -9,10 +10,13 @@ const Modal = ({showModal, setShowModal}) => {
   switch (showModal) {
     case 'flatiron':
       opt = flatironData
-      break;
+      break
     case 'work':
       opt = workData
-      break;
+      break
+    case 'CV':
+      opt = CVData
+      break
     default:
       return null
   }
@@ -33,7 +37,7 @@ const Modal = ({showModal, setShowModal}) => {
           <h2>{opt.title}</h2>
         </div>
         <div className='modal-content'>
-          {contentMap}
+          {showModal !== 'CV' ? contentMap : <img src={AlieCV} alt='Alie CV'/>}
         </div>
       </div>
     </div>

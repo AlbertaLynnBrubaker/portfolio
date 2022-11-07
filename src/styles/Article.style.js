@@ -17,12 +17,16 @@ const Article = styled.article`
   }
 
   .project-image img {
-  border-radius: 1rem;
-}
+    border-radius: 1rem;
+  }
+
+  h4, h5 {
+    color: var(--color-dark);
+  }
 
   small {
   font-size: .7rem;
-  color: ${props => props.varColor ? 'var(--color-bg)' : 'var(--color-light)'};
+  color: var(--color-bg);
   }
 
   a {
