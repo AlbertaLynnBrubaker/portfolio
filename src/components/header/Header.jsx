@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 
+import Modal from '../modal/Modal'
 import HeaderButtons from './HeaderButtons'
 import HeaderSocials from './HeaderSocials'
 import avatar from '../../assets/HeaderPic.png'
@@ -11,15 +12,18 @@ import Wrapper from '../../styles/Wrapper.style'
 import './header.css'
 
 const Header = () => {
+  const [showModal, setShowModal] = useState("")
+
   return (
     <Wrapper as='header' id='header'>
       <Container className="header-container">
+        <Modal showModal={showModal} setShowModal={setShowModal}/>
         <div className='header-logo-container'>          
           <Image src={ABLogoLight} />          
         </div>
         <h1>Alie Brubaker</h1>
         <h5 className='text-light'>Fullstack Software Engineer</h5>
-        <HeaderButtons />
+        <HeaderButtons showModal={showModal} setShowModal={setShowModal} />
         <HeaderSocials />
         {/* <div className='avatar'>
           <Image src={avatar} alt='Alie Brubaker' />

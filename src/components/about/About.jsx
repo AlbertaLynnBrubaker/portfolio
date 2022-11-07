@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import Modal from './Modal'
+import Modal from '../modal/Modal'
 
 import { GoMortarBoard } from 'react-icons/go'
 import { GiSkills } from 'react-icons/gi'
@@ -38,14 +38,14 @@ const About = () => {
             <Card className='about-card' varPadding={false} onClick={() => setShowModal('flatiron')}>
               <Article varFontSize={true}>
                 <GoMortarBoard className='icon' />
-                <h4>Flatiron School Graduate</h4>
+                <h4 className='text-dark'>Flatiron School Graduate</h4>
                 <small>Software Engineering Program</small>
               </Article>
             </Card>
             <Card className='about-card' varPadding={false} onClick={() => setShowModal('work')}>
               <Article varFontSize={true}>
                 <GiSkills className='icon' />
-                <h4>Experienced Leader</h4>
+                <h4 className='text-dark'>Experienced Leader</h4>
                 <small>Sales and Service</small>
               </Article>
             </Card>          

@@ -18,6 +18,7 @@ const GlobalStyles = createGlobalStyle`
     --color-primary: #E5CFFB;
     --color-white: #fff;
     --color-light: rgba(255, 255 ,255, .6);
+    --color-dark: #36454F;
 
     --transition: all 400ms ease;
 
@@ -33,6 +34,21 @@ const GlobalStyles = createGlobalStyle`
   }
 
   ::-webkit-scrollbar {
+    display: auto;
+    background-color: var(--color-dark);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    border: 2px solid var(--color-dark);
+    background-color: var(--color-primary);
+  }
+
+  ::-webkit-scrollbar-corner {
+    background-color: var(--color-dark);
+  }
+
+  body::-webkit-scrollbar {
     display: none;
   }
 
@@ -40,7 +56,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Inter', sans-serif;
     background: var(--color-bg);
     color: var(--color-white);
-    line-height: 1.7;  
+    line-height: 1.7;
   }
 
   h1, h2, h3, h4, h5 {
@@ -53,6 +69,10 @@ const GlobalStyles = createGlobalStyle`
 
   .text-light {
     color: var(--color-light);
+  }
+
+  .text-dark {
+    color: var(--color-bg);
   }
 
   a {

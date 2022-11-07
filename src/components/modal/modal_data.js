@@ -8,4 +8,9 @@ const workData = {
   content: ['I have spent half of my seventeen years in the workforce as a supervisor or manager in the mid sized retail consumables industry leading small teams of four to seven. I hope to leverage that experience to become an asset in a role as a software engineer.', 'By far, the most critical role I have played in the success of the companies I have worked for has been in training and team-building. Beyond training a large number of entry level employees, I was responsible for training fully a third of the front-end supervisors in the Minnesota market while I was working for Total Wine & More, including my own replacement when I was promoted. Beyond that, I trained every educator who taught wine and spirits classes out of the Minnetonka store.', 'I firmly believe that an early investment in excellent training pays exceptional dividends down the line. Leveling everyone up and bringing everyone on the team along is far and above the most efficient way to run a team over any serious period of time.', 'I understand that I am at the very bottom rung of the ladder as a software engineer, but I hope to be in the position to help as many junior engineers succeed as possible in a few short years. All I need is a company that has the same strong belief in team member development that I do.']
 }
 
-export { flatironData, workData }
+const CVData = {
+  title: 'My Resume',
+  content: ['AlieCV.pdf']
+}
+
+export { flatironData, workData, CVData }

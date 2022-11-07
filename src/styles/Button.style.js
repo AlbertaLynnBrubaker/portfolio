@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
-const Button = styled.button`
-  
+const Button = styled.button`  
   width: max-content;
   display: inline-block;
   color: ${props => props.primary ? 'var(--color-bg)' : 'var(--color-primary)'};
